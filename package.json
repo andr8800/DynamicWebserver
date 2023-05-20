@@ -1,0 +1,29 @@
+{
+    "name": "dynamic-webserver",
+    "version": "0.0.0",
+    "description": "Dynamic Web Server using Node JS",
+    "author": {
+        "name": "Owen Xiong",
+        "email": "xion6136@stthomas.edu"
+    },
+    "contributors": [
+        {
+            "name": "Jackson Meyer",
+            "email": "meye4606@stthomas.edu"
+        },
+        {
+            "name": "Michael Andreucci",
+            "email": "andr8800@stthomas.edu"
+        }
+    ],
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "chart.js": "^3.9.1",
+        "express": "^4.18.2",
+        "sqlite3": "^5.1.2"
+    }
+}

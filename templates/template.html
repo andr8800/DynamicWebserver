@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Airline and Sustainability</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header style="text-align: center; font-size: 2REM; font-weight: bold" class="grid-x grid-padding-x show-for-medium">%%CURRENT_DYNAMIC_SUBJECT%%</header>
+        <div style="text-align: center">
+            <a href=%%DYNAMIC_LINK1%%>
+                <button type="button">%%DYNAMIC_UP%%</button>
+            </a>
+            <a href=%%DYNAMIC_LINK2%%>
+                <button type="button">%%DYNAMIC_DOWN%%</button>
+            </a>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-3">
+                <img src="%%IMG_SRC%%" alt="%%IMG_ALT%%" />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Month
+                            </th>
+                            <th>
+                                Day
+                            </th>
+                            <th>
+                                Departure Time
+                            </th>
+                            <th>
+                                Scheduled Departure Time
+                            </th>
+                            <th>
+                                Arrival Time
+                            </th>
+                            <th>
+                                Scheduled Arrival Time
+                            </th>
+                            <th>
+                                Unique Carrier
+                            </th>
+                            <th>
+                                AirTime
+                            </th>
+                            <th>
+                                AirDelay
+                            </th>
+                            <th>
+                                Departure Delay
+                            </th>
+                            <th>
+                                Origin
+                            </th>
+                            <th>
+                                Destination
+                            </th>
+                            <th>
+                                Distance
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        %%DYNAMIC_INFOMATION%%
+                    </tbody>
+                </table>
+            </div>
+            <div class="cell large-auto">
+                <h1>%%DYNAMIC_H1%%</h1>
+                <p style="font-size:2rem">
+                    %%DYNAMIC_PARAGRAPH%%
+                </p>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-auto">
+                <canvas id="myChart" width="400" height="400"></canvas>
+                <script>
+                const ctx = document.getElementById('myChart');
+                const myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Air Delay', 'Departure Time', 'Arrival Time', 'Scheduled Arrival Time', 'Distance', 'Air Time'],
+                        datasets: [{
+                            label: 'Airline DB',
+                            data: [DATA1, DATA2, DATA3, DATA4, DATA5, DATA6],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
