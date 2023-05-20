@@ -1,4 +1,4 @@
-Database [ https://uofstthomasmn-my.sharepoint.com/:u:/g/personal/xion6136_stthomas_edu/EZxGNvpJgKRLtZVimU7K9iMB3eJ4QwF_5vRAEkX7ilYivw?e=z9ngqc ](https://uofstthomasmn.sharepoint.com/:u:/r/sites/AirlineDB/Shared%20Documents/AirlineDB.zip?csf=1&web=1&e=pSQlw4)
+Database [https://uofstthomasmn.sharepoint.com/:u:/r/sites/AirlineDB/Shared%20Documents/AirlineDB.zip?csf=1&web=1&e=pSQlw4](https://uofstthomasmn.sharepoint.com/:u:/r/sites/AirlineDB/Shared%20Documents/AirlineDB.zip?csf=1&web=1&e=pSQlw4)
 -Please download the database, unzipped it, create a new folder called db and put the extracted database inside that folder if youd like to use this database.
 
 ## Introduction
